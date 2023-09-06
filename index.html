@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Feature-Conditioned Cascaded Video Diffusion Models for Precise Echocardiogram Synthesis">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feature-Conditioned Cascaded Video Diffusion Models for Precise Echocardiogram Synthesis</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bulma.min.css">
+  <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" href="./favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./js/fontawesome.all.min.js"></script>
+  <script src="./js/bulma-carousel.min.js"></script>
+  <script src="./js/bulma-slider.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="https://kit.fontawesome.com/93a5d09ba9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Title section -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Feature-Conditioned Cascaded Video Diffusion Models for Precise
+              Echocardiogram Synthesis</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="#">Hadrien Reynaud</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="#">Mengyun Qiao</a><sup>2,3</sup>,</span>
+              <span class="author-block">
+                <a href="#">Mischa Dombrowski</a><sup>4</sup>,
+              </span>
+              <span class="author-block">
+                <a href="#">Thomas Day</a><sup>5,6</sup>,
+              </span>
+              <span class="author-block">
+                <a href="#">Reza Razavi</a><sup>5,6</sup>,
+              </span>
+              <span class="author-block">
+                <a href="">Alberto Gomez</a><sup>5,7</sup>,
+              </span>
+              <span class="author-block">
+                <a href="">Paul Leeson</a><sup>7,8</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://bernhard-kainz.com/">Bernhard Kainz</a><sup>2,4</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>UKRI CDT in AI for Healthcare, Imperial College London, London,
+                UK,</span><br>
+              <span class="author-block"><sup>2</sup>Department of Computing, Imperial College London, London,
+                UK,</span><br>
+              <span class="author-block"><sup>3</sup>Department of Brain Sciences and Data Science Institute, Imperial
+                College London, London, UK,</span><br>
+              <span class="author-block"><sup>4</sup>Friedrich–Alexander University Erlangen–Nürnberg, DE,</span><br>
+              <span class="author-block"><sup>5</sup>School of Biomedical Engineering and Imaging Sciences, King’s
+                College London, London, UK,</span><br>
+              <span class="author-block"><sup>6</sup>Department of Congenital Cardiology, Evelina London Children’s
+                Healthcare, Guy’s and St Thomas’ NHS Foundation Trust, London, UK,</span><br>
+              <span class="author-block"><sup>7</sup>Ultromics Ltd, Oxford, UK,</span><br>
+              <span class="author-block"><sup>8</sup>John Radcliffe Hospital, Cardiovascular Clinical Research Facility,
+                Oxford, UK</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2303.12644.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2303.12644" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/HReynaud/EchoDiffusion"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abstract. -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Image synthesis is expected to provide value for the translation of
+              machine learning methods into clinical practice. Fundamental problems
+              like model robustness, domain transfer, causal modelling, and operator
+              training become approachable through synthetic data. Especially,
+              heavily operator-dependant modalities like Ultrasound imaging require
+              robust frameworks for image and video generation.
+            </p>
+            <p>
+              So far, video generation has only been possible by providing input
+              data that is as rich as the output data, <i>e.g.</i>, image sequence
+              <i class="fa-solid fa-plus"></i> conditioning <i class="fas fa-arrow-right"></i> video.
+              However, clinical documentation is usually scarce and only single images
+              are reported and stored, thus retrospective patient-specific analysis
+              or the generation of rich training data becomes impossible with current
+              approaches.
+            </p>
+            <p>
+              In this paper, we extend elucidated diffusion models for
+              video modelling to generate plausible video sequences from single images
+              and arbitrary conditioning with clinical parameters. We explore this
+              idea within the context of echocardiograms by looking into the variation
+              of the Left Ventricle Ejection Fraction, the most essential clinical
+              metric gained from these examinations. We use the publicly available
+              EchoNet-Dynamic dataset for all our experiments. Our image to sequence
+              approach achieves an R<sup>2</sup> score of 93%, which is 38 points higher than
+              recently proposed sequence to sequence generation methods.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video demo -->
+  <section class="section">
+    <div class="container content">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+      <!-- <div class="columns is-centered has-text-centered"> -->
+          <h2 class="title is-3 is-centered"> This is a mix of real and fake echocardiograms,
+            can you tell which is which ?</h2>
+          <p>Hover a video to see whether it's an original sample,
+            a factual generated sample or a counterfactual generated sample.
+            You can also click this <button id='start_button' onclick="start_game()">Button</button> to tranform
+            the mosaic into a game where you have to guess whether
+            a sample is real or not.</p>
+
+          <div id="gif-mosaic">
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+            <div class="video_wrapper">
+              <div class="video_container">
+                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <div class="caption">
+                  <div>Original</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div><span id="score">Score: 0/0 (0%)</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- diffusion demo huggingface -->
+  <!-- <section class="section" id="hfdemo">
+    <div class="container is-max-desktop content">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-max-desktop">
+          <h2 class="title is-3">Diffusion model inference</h2>
+          <iframe src="https://anon-sgxt-echocardiogram-video-diffusion.hf.space" 
+            frameborder="0" 
+            width="1280"
+            height="800">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Acknowledgements -->
+  <section class="section" id="Acknowledgements">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Acknowledgements</h2>
+      <p>
+        This work was supported by Ultromics Ltd. and the UKRI Centre
+        or Doctoral Training in Artificial Intelligence for Healthcare (EP/S023283/1).
+        The authors gratefully acknowledge the scientific support and HPC
+        resources provided by the Erlangen National High Performance
+        Computing Center (NHR@FAU) of the Friedrich-Alexander-Universität
+        Erlangen-Nürnberg (FAU) under the NHR project b143dc PatRo-MRI. NHR
+        funding is provided by federal and Bavarian state authorities. NHR@FAU
+        hardware is partially funded by the German Research Foundation (DFG) – 440719683.</p>
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @misc{reynaud2023featureconditioned,
+          title={Feature-Conditioned Cascaded Video Diffusion Models for Precise Echocardiogram Synthesis}, 
+          author={Hadrien Reynaud and Mengyun Qiao and Mischa Dombrowski and Thomas Day and Reza Razavi and Alberto Gomez and Paul Leeson and Bernhard Kainz},
+          year={2023},
+          eprint={2303.12644},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV}
+        }
+    </code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              Website source code based on the source code of
+              <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
