@@ -6,8 +6,7 @@
   <meta name="description"
     content="Feature-Conditioned Cascaded Video Diffusion Models for Precise Echocardiogram Synthesis">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Feature-Conditioned Cascaded Video Diffusion Models for Precise Echocardiogram Synthesis</title>
-
+  <title>WAV2UIT: AN AUDIO-TEXTUAL DIFFUSION MODEL FOR TONGUE ULTRASOUND IMAGE GENERATION</title>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -46,30 +45,17 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Feature-Conditioned Cascaded Video Diffusion Models for Precise
-              Echocardiogram Synthesis</h1>
+            <h1 class="title is-1 publication-title">ATDM4UTI: AN AUDIO-TEXTUAL DIFFUSION MODEL FOR TONGUE ULTRASOUND IMAGE GENERATION</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="#">Hadrien Reynaud</a><sup>1,2</sup>,</span>
+                <a href="#">Yudong Yang</a><sup>1,2</sup>,</span>
               <span class="author-block">
-                <a href="#">Mengyun Qiao</a><sup>2,3</sup>,</span>
+                <a href="#">Rongfeng Su</a><sup>1,2</sup>,</span>
               <span class="author-block">
-                <a href="#">Mischa Dombrowski</a><sup>4</sup>,
+                <a href="#">Nan Yan</a><sup>1,2</sup>,
               </span>
               <span class="author-block">
-                <a href="#">Thomas Day</a><sup>5,6</sup>,
-              </span>
-              <span class="author-block">
-                <a href="#">Reza Razavi</a><sup>5,6</sup>,
-              </span>
-              <span class="author-block">
-                <a href="">Alberto Gomez</a><sup>5,7</sup>,
-              </span>
-              <span class="author-block">
-                <a href="">Paul Leeson</a><sup>7,8</sup>
-              </span>
-              <span class="author-block">
-                <a href="https://bernhard-kainz.com/">Bernhard Kainz</a><sup>2,4</sup>
+                <a href="#">Lan wang</a><sup>1,2</sup>
               </span>
             </div>
 
@@ -80,21 +66,13 @@
                 UK,</span><br>
               <span class="author-block"><sup>3</sup>Department of Brain Sciences and Data Science Institute, Imperial
                 College London, London, UK,</span><br>
-              <span class="author-block"><sup>4</sup>Friedrich–Alexander University Erlangen–Nürnberg, DE,</span><br>
-              <span class="author-block"><sup>5</sup>School of Biomedical Engineering and Imaging Sciences, King’s
-                College London, London, UK,</span><br>
-              <span class="author-block"><sup>6</sup>Department of Congenital Cardiology, Evelina London Children’s
-                Healthcare, Guy’s and St Thomas’ NHS Foundation Trust, London, UK,</span><br>
-              <span class="author-block"><sup>7</sup>Ultromics Ltd, Oxford, UK,</span><br>
-              <span class="author-block"><sup>8</sup>John Radcliffe Hospital, Cardiovascular Clinical Research Facility,
-                Oxford, UK</span>
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2303.12644.pdf"
+                  <a href=""
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -103,11 +81,11 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2303.12644" class="external-link button is-normal is-rounded is-dark">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
-                    <span>arXiv</span>
+                    <span>Data</span>
                   </a>
                 </span>
                 <!-- Video Link. -->
@@ -122,7 +100,7 @@
               </span> -->
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/HReynaud/EchoDiffusion"
+                  <a href=""
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -156,32 +134,22 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Image synthesis is expected to provide value for the translation of
-              machine learning methods into clinical practice. Fundamental problems
-              like model robustness, domain transfer, causal modelling, and operator
-              training become approachable through synthetic data. Especially,
-              heavily operator-dependant modalities like Ultrasound imaging require
-              robust frameworks for image and video generation.
-            </p>
-            <p>
-              So far, video generation has only been possible by providing input
-              data that is as rich as the output data, <i>e.g.</i>, image sequence
-              <i class="fa-solid fa-plus"></i> conditioning <i class="fas fa-arrow-right"></i> video.
-              However, clinical documentation is usually scarce and only single images
-              are reported and stored, thus retrospective patient-specific analysis
-              or the generation of rich training data becomes impossible with current
-              approaches.
-            </p>
-            <p>
-              In this paper, we extend elucidated diffusion models for
-              video modelling to generate plausible video sequences from single images
-              and arbitrary conditioning with clinical parameters. We explore this
-              idea within the context of echocardiograms by looking into the variation
-              of the Left Ventricle Ejection Fraction, the most essential clinical
-              metric gained from these examinations. We use the publicly available
-              EchoNet-Dynamic dataset for all our experiments. Our image to sequence
-              approach achieves an R<sup>2</sup> score of 93%, which is 38 points higher than
-              recently proposed sequence to sequence generation methods.
+              This paper investigates the problem of acoustic-to-articulatory (AAI) for Ultrasound Tongue Image (UTI) generation.
+              The key issues associated with current UTI based AAI methods are lacking of using universal information of tongue
+              motion across different speakers, and limited abilities for modelling the long-range temporal dependencies across
+              multiple consecutive pronunciations. To address these issues, this paper proposes an Audio-Textual Diffusion Model
+              for UTI generation (ATDM4UTI). The proposed ATDM4UTI model consist of two modules: the speech-text encoding module
+              and the audio-textual conditioned cascaded video diffusion generation module. The fist module is used to obtain
+              detailed tongue movement information of individual speaker from speech inputs, and obtain the universal tongue
+              movement information across different speakers from the ASR transcription. The second module based on the cascaded
+              diffusion framework is used to capture the long-term dependencies across multiple consecutive pronunciations by
+              step-by-step denoising sampling strategy. Experimental results on a Mandarin ultrasound-speech dataset showed that
+              the proposed ATDM4UTI system can generate high-quality UTIs with clear tongue contour, which plays an important
+              role in speech recognition and medical analysis. Compared to the state-of-the-art DNN based UTI-AAI system, the
+              ATDM4UTI system achieved a LPIPS improvement of 67.95% relative and a FID improvement of 91.42% relative,
+              respectively.
+
+
             </p>
           </div>
         </div>
@@ -195,18 +163,14 @@
       <div class="columns is-centered has-text-centered">
         <div class="column">
       <!-- <div class="columns is-centered has-text-centered"> -->
-          <h2 class="title is-3 is-centered"> This is a mix of real and fake echocardiograms,
-            can you tell which is which ?</h2>
-          <p>Hover a video to see whether it's an original sample,
-            a factual generated sample or a counterfactual generated sample.
-            You can also click this <button id='start_button' onclick="start_game()">Button</button> to tranform
-            the mosaic into a game where you have to guess whether
-            a sample is real or not.</p>
+          <h2 class="title is-3 is-centered"> This is  real and fake Ultrasound tongue imaging
+          </h2>
+          <p>Hover a video to see whether it's an original sample or a generated sample.</p>
 
           <div id="gif-mosaic">
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/original/speaker00013_M_s1_stn00031.gif?random=123" width="224" loop autoplay>
                 <div class="caption">
                   <div>Original</div>
                 </div>
@@ -214,7 +178,7 @@
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/original/speaker00013_M_s1_stn00062.gif" width="224">
                 <div class="caption">
                   <div>Original</div>
                 </div>
@@ -222,7 +186,7 @@
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/original/speaker00016_F_s1_stn00035.gif" width="224">
                 <div class="caption">
                   <div>Original</div>
                 </div>
@@ -230,7 +194,7 @@
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/original/speaker00016_F_s1_stn00035.gif" width="224">
                 <div class="caption">
                   <div>Original</div>
                 </div>
@@ -238,7 +202,7 @@
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/original/speaker00013_M_s1_stn00004.gif" width="224">
                 <div class="caption">
                   <div>Original</div>
                 </div>
@@ -246,7 +210,7 @@
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/original/speaker00012_M_s1_stn00089.gif" width="224">
                 <div class="caption">
                   <div>Original</div>
                 </div>
@@ -254,97 +218,97 @@
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/a4u+a/gif_output_speaker00013_M_s1_stn00031_sp.gif" width="224">
                 <div class="caption">
-                  <div>Original</div>
+                  <div>A4U+A</div>
                 </div>
               </div>
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/a4u+a/gif_output_speaker00013_M_s1_stn00062_sp.gif" width="224">
                 <div class="caption">
-                  <div>Original</div>
+                  <div>A4U+A</div>
                 </div>
               </div>
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/a4u+a/gif_output_speaker00016_F_s1_stn00035_sp.gif" width="224">
                 <div class="caption">
-                  <div>Original</div>
+                  <div>A4U+A</div>
                 </div>
               </div>
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/a4u+a/gif_output_speaker00016_F_s1_stn00035_sp.gif" width="224">
                 <div class="caption">
-                  <div>Original</div>
+                  <div>A4U+A</div>
                 </div>
               </div>
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/a4u+a/gif_output_speaker00016_F_s1_stn00035_sp.gif" width="224">
                 <div class="caption">
-                  <div>Original</div>
+                  <div>A4U+A</div>
                 </div>
               </div>
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/a4u+a/gif_output_speaker00016_F_s1_stn00035_sp.gif" width="224">
                 <div class="caption">
-                  <div>Original</div>
+                  <div>A4U+A</div>
                 </div>
               </div>
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/a4u+at/gif_output_speaker00013_M_s1_stn00031.gif" width="224">
                 <div class="caption">
-                  <div>Original</div>
+                  <div>A4U+AT</div>
                 </div>
               </div>
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/a4u+at/gif_output_speaker00013_M_s1_stn00062.gif" width="224">
                 <div class="caption">
-                  <div>Original</div>
+                  <div>A4U+AT</div>
                 </div>
               </div>
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/a4u+at/gif_output_speaker00014_M_s1_stn00064.gif" width="224">
                 <div class="caption">
-                  <div>Original</div>
+                  <div>A4U+AT</div>
                 </div>
               </div>
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/a4u+at/gif_output_speaker00016_F_s1_stn00035.gif" width="224">
                 <div class="caption">
-                  <div>Original</div>
+                  <div>A4U+AT</div>
                 </div>
               </div>
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/a4u+at/gif_output_speaker00020_F_s1_stn00123.gif" width="224">
                 <div class="caption">
-                  <div>Original</div>
+                  <div>A4U+AT</div>
                 </div>
               </div>
             </div>
             <div class="video_wrapper">
               <div class="video_container">
-                <img src="pool/original/0X10AD385C206C8.gif" width="224">
+                <img src="pool/a4u+at/gif_output_speaker00014_M_s1_stn00064.gif" width="224">
                 <div class="caption">
-                  <div>Original</div>
+                  <div>A4U+AT</div>
                 </div>
               </div>
             </div>
@@ -361,8 +325,8 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-max-desktop">
           <h2 class="title is-3">Diffusion model inference</h2>
-          <iframe src="https://anon-sgxt-echocardiogram-video-diffusion.hf.space" 
-            frameborder="0" 
+          <iframe src="https://anon-sgxt-echocardiogram-video-diffusion.hf.space"
+            frameborder="0"
             width="1280"
             height="800">
           </iframe>
@@ -371,21 +335,6 @@
     </div>
   </section> -->
 
-  <!-- Acknowledgements -->
-  <section class="section" id="Acknowledgements">
-    <div class="container is-max-desktop content">
-      <h2 class="title">Acknowledgements</h2>
-      <p>
-        This work was supported by Ultromics Ltd. and the UKRI Centre
-        or Doctoral Training in Artificial Intelligence for Healthcare (EP/S023283/1).
-        The authors gratefully acknowledge the scientific support and HPC
-        resources provided by the Erlangen National High Performance
-        Computing Center (NHR@FAU) of the Friedrich-Alexander-Universität
-        Erlangen-Nürnberg (FAU) under the NHR project b143dc PatRo-MRI. NHR
-        funding is provided by federal and Bavarian state authorities. NHR@FAU
-        hardware is partially funded by the German Research Foundation (DFG) – 440719683.</p>
-    </div>
-  </section>
 
 
   <section class="section" id="BibTeX">
@@ -393,7 +342,7 @@
       <h2 class="title">BibTeX</h2>
       <pre><code>
         @misc{reynaud2023featureconditioned,
-          title={Feature-Conditioned Cascaded Video Diffusion Models for Precise Echocardiogram Synthesis}, 
+          title={Feature-Conditioned Cascaded Video Diffusion Models for Precise Echocardiogram Synthesis},
           author={Hadrien Reynaud and Mengyun Qiao and Mischa Dombrowski and Thomas Day and Reza Razavi and Alberto Gomez and Paul Leeson and Bernhard Kainz},
           year={2023},
           eprint={2303.12644},
@@ -426,5 +375,19 @@
   </footer>
 
 </body>
+<script>
+  // 获取所有的视频容器元素
+  const videoContainers = document.querySelectorAll('.video_container');
+
+  // 遍历每个视频容器
+  videoContainers.forEach((container) => {
+    const img = container.querySelector('img'); // 获取容器内的GIF元素
+    img.addEventListener('mouseover', () => {
+      img.src = img.src + '?random=' + Math.random(); // 添加随机参数，强制重新加载GIF
+    });
+  });
+</script>
 
 </html>
+
+
