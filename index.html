@@ -6,7 +6,7 @@
   <meta name="description"
     content="Feature-Conditioned Cascaded Video Diffusion Models for Precise Echocardiogram Synthesis">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WAV2UIT: AN AUDIO-TEXTUAL DIFFUSION MODEL FOR TONGUE ULTRASOUND IMAGE GENERATION</title>
+  <title>WAV2UIT: AN AUDIO-TEXTUAL DIFFUSION MODEL FOR CONVERTING SPEECH SIGNALS INTO ULTRASOUND IMAGES OF THE TONGUE</title>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -45,27 +45,27 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">ATDM4UTI: AN AUDIO-TEXTUAL DIFFUSION MODEL FOR TONGUE ULTRASOUND IMAGE GENERATION</h1>
+            <h1 class="title is-1 publication-title">WAV2UIT: AN AUDIO-TEXTUAL DIFFUSION MODEL FOR CONVERTING SPEECH SIGNALS INTO ULTRASOUND IMAGES OF THE TONGUE</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="#">Yudong Yang</a><sup>1,2</sup>,</span>
+                <a href="#">Yudong Yang</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="#">Rongfeng Su</a><sup>1,2</sup>,</span>
+                <a href="#">Rongfeng Su</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="#">Nan Yan</a><sup>1,2</sup>,
+                <a href="#">Xiaokang Liu</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="#">Nan Yan</a><sup>1,3</sup>,
               </span>
               <span class="author-block">
-                <a href="#">Lan wang</a><sup>1,2</sup>
+                <a href="#">Lan wang</a><sup>1,3</sup>
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>UKRI CDT in AI for Healthcare, Imperial College London, London,
-                UK,</span><br>
-              <span class="author-block"><sup>2</sup>Department of Computing, Imperial College London, London,
-                UK,</span><br>
-              <span class="author-block"><sup>3</sup>Department of Brain Sciences and Data Science Institute, Imperial
-                College London, London, UK,</span><br>
+              <span class="author-block"><sup>1</sup>Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China.</span><br>
+              <span class="author-block"><sup>2</sup>University of Chinese Academy of Sciences, Beijing, China.</span><br>
+              <span class="author-block"><sup>3</sup>Guangdong-Hong Kong-Macao Joint Laboratory of Human-Machine Intelligence-Synergy Systems,
+Shenzhen, China.</span><br>
             </div>
 
             <div class="column has-text-centered">
@@ -134,20 +134,28 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              This paper investigates the problem of acoustic-to-articulatory (AAI) for Ultrasound Tongue Image (UTI) generation.
-              The key issues associated with current UTI based AAI methods are lacking of using universal information of tongue
-              motion across different speakers, and limited abilities for modelling the long-range temporal dependencies across
-              multiple consecutive pronunciations. To address these issues, this paper proposes an Audio-Textual Diffusion Model
-              for UTI generation (ATDM4UTI). The proposed ATDM4UTI model consist of two modules: the speech-text encoding module
-              and the audio-textual conditioned cascaded video diffusion generation module. The fist module is used to obtain
-              detailed tongue movement information of individual speaker from speech inputs, and obtain the universal tongue
-              movement information across different speakers from the ASR transcription. The second module based on the cascaded
-              diffusion framework is used to capture the long-term dependencies across multiple consecutive pronunciations by
-              step-by-step denoising sampling strategy. Experimental results on a Mandarin ultrasound-speech dataset showed that
-              the proposed ATDM4UTI system can generate high-quality UTIs with clear tongue contour, which plays an important
-              role in speech recognition and medical analysis. Compared to the state-of-the-art DNN based UTI-AAI system, the
-              ATDM4UTI system achieved a LPIPS improvement of 67.95% relative and a FID improvement of 91.42% relative,
-              respectively.
+              Acoustic-to-articulatory inversion (AAI) is to convert speech
+              signals into the movement of articulators, such as ultrasound
+              images (UIs) of the tongue. A key issue associated with
+              existing AAI methods is only using the highly personalized
+              information from acoustic inputs to derive the general patterns of tongue motions, and thus the quality of generated
+              UIs is limited. To address this issue, an audio-textual diffusion model is proposed to convert speech signals into UIs
+              of the tongue, named W AV 2UIT. The W AV 2UIT model
+              consists of two stages: conditional encoding and UI generation. In the first stage, the inherent acoustic characteristics
+              of individuals related to the details of tongue movements are
+              encoded by using wav2vec 2.0, while the ASR transcriptions
+              in the textual space related to the universality of tongue motions are encoded by using BERT. The personalized acoustic
+              information and universal textual information are then fused
+              by using cross-attention mechanism. In the second stage, the
+              fused features are used as the conditional inputs of the diffusion module. In this module, the long-term dependencies
+              between consecutive pronunciations and UIs are captured
+              by using cyclic denoising sampling strategy. Experimental
+              results on a Mandarin speech-ultrasound dataset showed that
+              the proposed W av2UIT system outperformed the state-of-the-art DNN based UI-AAI system by a LPIPS improvement
+              of 67.95% relative and a FID improvement of 91.42% relative, respectively. The W av2UIT system can generate
+              high-quality UIs with clear tongue contour, which plays an
+              important role in speech recognition and medical analysis.
+              The codes and examples can be found on the website
 
 
             </p>
@@ -341,14 +349,15 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-        @misc{reynaud2023featureconditioned,
-          title={Feature-Conditioned Cascaded Video Diffusion Models for Precise Echocardiogram Synthesis},
-          author={Hadrien Reynaud and Mengyun Qiao and Mischa Dombrowski and Thomas Day and Reza Razavi and Alberto Gomez and Paul Leeson and Bernhard Kainz},
-          year={2023},
-          eprint={2303.12644},
-          archivePrefix={arXiv},
-          primaryClass={cs.CV}
-        }
+        Under Viewer
+<!--        @misc{reynaud2023featureconditioned,-->
+<!--          title={Feature-Conditioned Cascaded Video Diffusion Models for Precise Echocardiogram Synthesis},-->
+<!--          author={Hadrien Reynaud and Mengyun Qiao and Mischa Dombrowski and Thomas Day and Reza Razavi and Alberto Gomez and Paul Leeson and Bernhard Kainz},-->
+<!--          year={2023},-->
+<!--          eprint={2303.12644},-->
+<!--          archivePrefix={arXiv},-->
+<!--          primaryClass={cs.CV}-->
+<!--        }-->
     </code></pre>
     </div>
   </section>
